@@ -127,6 +127,18 @@ $(document).ready(function () {
 			},
 		},
 	});
+
+	// mobile_blog_swiper
+	const mobile_blog_swiper = new Swiper(".mobile_blog_swiper", {
+		// Default parameters
+		slidesPerView: 1.09,
+		spaceBetween: 10,
+		loop: true,
+		grabCursor: true,
+		// autoplay: {
+		// 	delay: 2000,
+		// },
+	});
 	// mobile_service_swiper
 	const mobile_service_swiper = new Swiper(".mobile_service_swiper", {
 		// Default parameters
