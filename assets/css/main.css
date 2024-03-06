@@ -1441,7 +1441,7 @@ footer .footer_social a {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  padding: 10px 0;
+  padding: 18px 0;
   background: rgb(255, 183, 116);
 }
 
@@ -1783,7 +1783,7 @@ footer .footer_social a {
   .hero {
     margin-bottom: 40px;
     padding: 0;
-    background-image: url(../images/hero_bg.png);
+    background-image: url(../images/main_mobile_hero_bg.png);
   }
   #contact {
     padding: 0;
@@ -2209,6 +2209,9 @@ footer .footer_social a {
     margin: auto;
     width: 72px;
   }
+  #main_services.services .service_img {
+    position: static;
+  }
   .services .services_block {
     margin-top: 50px;
   }
@@ -2247,7 +2250,7 @@ footer .footer_social a {
     margin-bottom: 40px;
   }
   .question .question_head.active {
-    padding: 18px 10px 0 10px;
+    padding: 18px 10px 0 18px;
   }
   .contact_form .contact_block button {
     width: 100%;
@@ -2363,5 +2366,28 @@ footer .footer_social a {
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
+  }
+  .found .found_block {
+    padding: 175px 0;
+  }
+  .found .not_found {
+    font-size: 135px;
+    margin-bottom: 10px;
+  }
+  .found .found_subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .found .found_desc {
+    font-size: 16px;
+    line-height: 146.19%;
+    margin-bottom: 20px;
+  }
+  .found .found_btn a {
+    font-weight: 700;
+    border-radius: 100px;
+  }
+  .found {
+    min-height: 700px;
   }
 }
