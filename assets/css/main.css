@@ -2067,6 +2067,7 @@ footer .footer_social a {
     margin-bottom: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
@@ -2258,6 +2259,9 @@ footer .footer_social a {
   .question .question_body {
     padding: 0 18px 18px 18px;
   }
+  .about_btn {
+    text-align: center;
+  }
   .location_block {
     flex-direction: column;
     gap: 55px;
@@ -2388,6 +2392,6 @@ footer .footer_social a {
     border-radius: 100px;
   }
   .found {
-    min-height: 700px;
+    min-height: 100vh;
   }
 }
