@@ -1,0 +1,686 @@
+header {
+	.header_block {
+		padding: 20px 0;
+	}
+	.header_menus {
+		gap: 40px;
+		li a {
+			color: rgb(55, 57, 63);
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			letter-spacing: 2%;
+			text-align: left;
+			text-transform: uppercase;
+			position: relative;
+			&::after {
+				content: "";
+				width: 0;
+				height: 1px;
+				background-color: #000000b9;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				z-index: 3;
+				transition: all ease-in 0.2s;
+			}
+			&:hover::after {
+				width: 100%;
+			}
+		}
+	}
+	.header_phone {
+		gap: 20px;
+	}
+	.number_tel {
+		color: rgb(9, 66, 53);
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 33px;
+		letter-spacing: 2%;
+		text-align: left;
+	}
+	.call_us {
+		color: rgb(105, 105, 105);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19px;
+		letter-spacing: 2%;
+		text-align: left;
+		text-decoration-line: underline;
+	}
+}
+
+// hero section
+.hero {
+	margin-bottom: 120px;
+	padding: 200px 0 71px 0;
+	background-color: rgba(9, 66, 53, 0.85);
+	background-image: linear-gradient(
+			to right,
+			rgba(9, 66, 53, 0.85) 50%,
+			transparent 20%
+		),
+		url(../images/hero_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	backdrop-filter: blur(19px);
+	.hero_left {
+		flex: 0 0 auto;
+		width: 50%;
+	}
+	.social_block {
+		gap: 55px;
+		a {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			letter-spacing: 2%;
+			text-align: left;
+		}
+	}
+	.hero_subtitle {
+		color: rgb(255, 183, 116);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 2%;
+		text-align: left;
+		margin-bottom: 50px;
+	}
+	.hero_title {
+		color: rgb(255, 255, 255);
+		font-family: "FrankRuehl";
+		font-size: 64px;
+		font-weight: 400;
+		line-height: 64px;
+		letter-spacing: 0%;
+		text-align: left;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	.hero_desc {
+		color: rgb(255, 255, 255);
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 33px;
+		letter-spacing: 2%;
+		text-align: left;
+		margin-bottom: 50px;
+		max-width: 482px;
+	}
+	.hero_btn {
+		padding-bottom: 100px;
+		a {
+			padding: 18px 60px 17px 60px;
+			color: rgb(0, 0, 0);
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 33px;
+			letter-spacing: 2%;
+			text-align: left;
+			text-transform: uppercase;
+			border-radius: 100px;
+			background: rgb(255, 183, 116);
+		}
+	}
+}
+
+// results
+.results {
+	margin-bottom: 150px;
+
+	.results_block {
+		gap: 30px;
+	}
+	.result_item {
+		flex-grow: 1;
+		border-radius: 10px;
+		background: rgb(244, 244, 244);
+		padding: 20px 0 22px 0;
+		transition: all ease-in 0.2s;
+		&:hover {
+			background: rgb(9, 66, 53);
+			cursor: pointer;
+			.result_count,
+			.result_name {
+				color: #fff;
+			}
+		}
+	}
+	.result_count {
+		color: rgb(9, 66, 53);
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 66px;
+		letter-spacing: 0%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.result_name {
+		color: rgb(0, 0, 0);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0%;
+		text-align: center;
+	}
+}
+
+// services
+.services {
+	margin-bottom: 100px;
+	.services_block {
+		gap: 30px;
+	}
+	.service_item {
+		flex: 0 0 auto;
+		width: calc(33.33% - 20px);
+		border-radius: 10px;
+		background: rgb(244, 244, 244);
+		padding: 30px;
+		display: flex;
+		justify-content: space-between;
+		transition: all ease-in 0.2s;
+		&:hover {
+			cursor: pointer;
+			background: rgb(9, 66, 53);
+			.service_name,
+			.service_read a {
+				color: #fff;
+			}
+			.service_img {
+				background: rgb(255, 183, 116);
+			}
+		}
+	}
+	.service_name {
+		color: rgb(55, 57, 63);
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 33px;
+		letter-spacing: 0%;
+		text-align: left;
+		margin-bottom: 27px;
+	}
+	.service_read {
+		a {
+			color: rgb(9, 66, 53);
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			letter-spacing: 0%;
+			text-align: left;
+			text-transform: capitalize;
+		}
+	}
+	.service_img {
+		background: rgb(9, 66, 53);
+		padding: 12px 14px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+	}
+	.service_more {
+		flex-grow: 1;
+		padding: 72px 0;
+		border-radius: 10px;
+		background: rgb(255, 183, 116);
+		transition: all ease-in 0.2s;
+		&:hover {
+			cursor: pointer;
+			background: rgb(9, 66, 53);
+		}
+		p {
+			text-align: center;
+			color: rgb(255, 255, 255);
+			font-size: 24px;
+			font-weight: 600;
+			line-height: 33px;
+			letter-spacing: 0%;
+			text-align: center;
+			text-transform: capitalize;
+		}
+	}
+}
+
+// about
+.about {
+	position: relative;
+	margin-bottom: 100px;
+	background-image: linear-gradient(
+		to right,
+		rgb(244, 244, 244) 45%,
+		transparent 20%
+	);
+	.about_block {
+		gap: 30px;
+	}
+	.about_left {
+		flex: 0 0 auto;
+		width: 45%;
+	}
+	.about_img {
+		padding-top: 50px;
+		margin-bottom: 13px;
+	}
+	.about_name {
+		color: rgb(55, 57, 63);
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 121%;
+		letter-spacing: 0%;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.about_job {
+		color: rgb(9, 66, 53);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 121%;
+		letter-spacing: 0%;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	.about_left_desc {
+		color: rgb(105, 105, 105);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 2%;
+		text-align: left;
+		max-width: 410px;
+		padding-bottom: 50px;
+	}
+	.about_welcome {
+		color: rgb(105, 105, 105);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 2%;
+		text-align: left;
+		margin-bottom: 40px;
+	}
+	.about_title {
+		font-family: "FrankRuehl";
+		font-size: 48px;
+		font-weight: 400;
+		line-height: 48px;
+		letter-spacing: 0%;
+		text-align: left;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	.about_right_desc {
+		color: rgb(105, 105, 105);
+		font-family: "Manrope";
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 2%;
+		text-align: left;
+		margin-bottom: 150px;
+		max-width: 610px;
+	}
+	.about_btn {
+		a {
+			color: rgb(0, 0, 0);
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 33px;
+			letter-spacing: 2%;
+			text-align: left;
+			text-transform: uppercase;
+			padding: 18px 60px;
+			border-radius: 100px;
+			background: rgb(255, 183, 116);
+		}
+	}
+	.stick_block {
+		gap: 30px;
+		position: absolute;
+		bottom: -185px;
+		right: -40px;
+		transform: rotate(-42.19deg);
+	}
+	.stick_item {
+		width: 74.66px;
+		height: 398.19px;
+		border-radius: 40px;
+	}
+	.stick2 {
+		background: rgb(9, 66, 53);
+	}
+	.stick1 {
+		background: rgb(255, 183, 116);
+	}
+}
+
+// clients
+.clients {
+	margin-bottom: 100px;
+	.swiper_item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.client_swiper {
+		padding: 0 40px 40px 40px;
+	}
+	.swiper_navigation {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.swiper_prev {
+			left: -45px;
+		}
+		.swiper_next {
+			right: -45px;
+		}
+	}
+}
+
+// review
+.review {
+	margin-bottom: 150px;
+	.review_block {
+		gap: 120px;
+	}
+	.review_swiper {
+		max-width: 850px;
+	}
+	.review_testimonial {
+		color: rgb(255, 183, 116);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 2%;
+		text-align: left;
+		margin-bottom: 15px;
+	}
+	.review_client_title {
+		font-family: "FrankRuehl";
+		font-size: 48px;
+		font-weight: 400;
+		line-height: 48px;
+		letter-spacing: 0%;
+		text-align: left;
+		text-transform: uppercase;
+		margin-bottom: 23px;
+	}
+	.review_desc {
+		color: rgb(125, 125, 125);
+		font-family: "Inter";
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 146.19%;
+		letter-spacing: 0%;
+		text-align: left;
+		max-width: 324px;
+		margin-bottom: 70px;
+	}
+	.review_navs {
+		display: flex;
+		gap: 30px;
+	}
+	.review_nav_item {
+		cursor: pointer;
+		i {
+			color: #000;
+			padding: 30px;
+			border-radius: 50%;
+			font-size: 20px;
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+			background: rgb(255, 255, 255);
+			transition: all ease-in 0.2s;
+			user-select: none;
+		}
+		&:hover {
+			i {
+				background: rgb(9, 66, 53);
+				color: #fff;
+			}
+		}
+	}
+	.swiper_item {
+		padding: 40px 37px 50px 37px;
+		border-radius: 10px;
+		background: rgb(244, 244, 244);
+	}
+	.swiper_top {
+		gap: 10px;
+		margin-bottom: 40px;
+	}
+	.swiper_name {
+		color: rgb(55, 57, 63);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+		letter-spacing: 0%;
+		text-align: left;
+		margin-bottom: 5px;
+		font-family: "Poppins", sans-serif;
+	}
+	.swiper_job {
+		color: rgb(125, 125, 125);
+		font-family: "Inter";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 135.19%;
+		letter-spacing: 0%;
+		margin-bottom: 3px;
+	}
+	.swiper_desc {
+		color: rgb(125, 125, 125);
+		font-family: "Inter";
+		font-style: italic;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 146.19%;
+		letter-spacing: 0%;
+	}
+}
+
+// experience
+.experience {
+	margin-bottom: 100px;
+	.experience_block {
+		padding: 95px 0 90px 0;
+		border-radius: 50px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url(../images/experience_bg.jpeg);
+
+		.exper_subtitle {
+			margin-bottom: 25px;
+			color: rgb(255, 183, 116);
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			letter-spacing: 2%;
+			text-align: center;
+		}
+		.exper_title {
+			margin-bottom: 10px;
+			max-width: 810px;
+			margin: 0 auto;
+			color: rgb(255, 255, 255);
+			font-family: "FrankRuehl";
+			font-size: 48px;
+			font-weight: 400;
+			line-height: 48px;
+			letter-spacing: 0%;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.exper_desc {
+			color: rgb(255, 255, 255);
+			font-family: "Inter";
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 146.19%;
+			letter-spacing: 0%;
+			text-align: center;
+			max-width: 710px;
+			margin: 0 auto 25px auto;
+		}
+		.exper_btn {
+			padding: 21px 42px;
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 25px;
+			letter-spacing: 0%;
+			text-align: center;
+			text-transform: uppercase;
+			border-radius: 100px;
+			background: rgb(255, 183, 116);
+		}
+	}
+}
+
+// footer
+footer {
+	padding: 60px 0 20px 0;
+	background: rgb(55, 57, 63);
+	.footer_right {
+		gap: 60px;
+	}
+	.footer_top {
+		margin-bottom: 75px;
+		padding-bottom: 43px;
+		border-bottom: 1px solid rgb(108, 109, 114);
+	}
+	.footer_right_item {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
+	.item_img {
+		height: 68px;
+		width: 68px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background: rgb(76, 77, 82);
+		border-radius: 50%;
+	}
+	.item_name {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 27px;
+		letter-spacing: 0%;
+		margin-bottom: 3px;
+	}
+	.item_detail {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0%;
+	}
+	.footer_middle {
+		gap: 135px;
+		padding-bottom: 102px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid rgb(108, 109, 114);
+	}
+	.footer_name {
+		color: rgb(255, 183, 116);
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 33px;
+		letter-spacing: 0%;
+		margin-bottom: 15px;
+	}
+	.footer_list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		li a {
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 220.19%;
+			letter-spacing: 0%;
+			color: #fff;
+			transition: all ease-in 0.1s;
+			&:hover {
+				color: rgb(255, 183, 116);
+			}
+		}
+	}
+	.footer_form {
+		align-self: baseline;
+		padding: 42px 36px;
+		border-radius: 10px;
+		background: rgb(71, 73, 80);
+	}
+	.form_subscribe {
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 27px;
+		margin-bottom: 6px;
+	}
+	.form_title {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 220.19%;
+		margin-bottom: 20px;
+	}
+	.footer_subscribe_block {
+		display: flex;
+		input {
+			border: none;
+			padding-left: 27px;
+			padding-right: 10px;
+			height: 65px;
+			background: rgb(255, 255, 255);
+			color: rgb(55, 57, 63);
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			letter-spacing: 0%;
+			outline: none;
+			&::placeholder {
+				font-size: 18px;
+			}
+		}
+		button {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 25px;
+			letter-spacing: 0%;
+			text-align: right;
+			text-transform: capitalize;
+			padding: 0 27px;
+			background: rgb(255, 183, 116);
+			border: none;
+		}
+	}
+	.copy_right {
+		color: rgb(255, 255, 255);
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0%;
+		text-align: left;
+	}
+	.footer_social {
+		gap: 24px;
+		a {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			letter-spacing: 0%;
+			text-decoration-line: underline;
+		}
+	}
+}

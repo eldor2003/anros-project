@@ -1,0 +1,35 @@
+// services_hero
+#services_hero {
+	padding: 140px 0;
+	background-image: linear-gradient(
+			to right,
+			rgba(9, 66, 53, 0.85) 50%,
+			transparent 20%
+		),
+		url(../images/services_bg.png);
+}
+
+// services page
+#services_page {
+	.service_item {
+		min-height: 180px;
+	}
+	.service_left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.more_services {
+		margin-top: 50px;
+		a {
+			color: rgb(255, 183, 116);
+			font-size: 24px;
+			font-weight: 600;
+			line-height: 33px;
+			letter-spacing: 0%;
+			text-align: left;
+			text-decoration-line: underline;
+		}
+	}
+}

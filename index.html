@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Шрифты -->
+    <!-- <link rel="stylesheet" href="./assets/fonts/stylesheet.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Anros </title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header_block d-flex align-items-center justify-content-between">
+                    <div class="header_logo">
+                        <a href="#">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- hamburger_mobile -->
+                    <div class="hamburger_menu d-lg-none">
+                        <a href="#">
+                            <svg class="hamburger_icon" width="27.000000" height="18.000000" viewBox="0 0 27 18"
+                                fill="none" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                    Created with Pixso.
+                                </desc>
+                                <defs />
+                                <path id="Icon"
+                                    d="M27 1.5C27 0.67157 26.3286 0 25.5 0L1.5 0C0.671387 0 0 0.67157 0 1.5C0 2.32843 0.671387 3 1.5 3L25.5 3C26.3286 3 27 2.32843 27 1.5ZM27 9C27 8.17157 26.3286 7.5 25.5 7.5L10.5 7.5C9.67139 7.5 9 8.17157 9 9C9 9.82843 9.67139 10.5 10.5 10.5L25.5 10.5C26.3286 10.5 27 9.82843 27 9ZM25.5 15C26.3286 15 27 15.6716 27 16.5C27 17.3284 26.3286 18 25.5 18L19.5 18C18.6714 18 18 17.3284 18 16.5C18 15.6716 18.6714 15 19.5 15L25.5 15Z"
+                                    fill="#000000" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </svg>
+
+                        </a>
+                    </div>
+                    <ul class="header_menus d-flex align-items-center">
+                        <!-- <span class="close d-lg-none">
+                            <i class="fs-3 fa-solid fa-xmark"></i>
+                        </span> -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <div class="dropdown_list  position-relative">
+                            <button class="dropbtn d-flex justify-content-between ">
+                                Services
+                                <div class="arrow d-flex align-items-center">
+                                    <img src="./assets/images/header_select_arrow.svg" alt="">
+                                </div>
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="service2.html">Service2</a>
+                                <a href="#">Service3</a>
+                                <a href="#">Service4</a>
+                            </div>
+                        </div>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="header_phone d-flex align-items-center">
+                        <div class="phone_icon">
+                            <img src="./assets/images/header_phone_arrow.svg" alt="">
+                        </div>
+                        <a class="phone_number d-flex flex-column" href="tel:02034882429">
+                            <span class="number_tel">020 3488 2429</span>
+                            <span class="call_us">Call us now!</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- hero_section -->
+        <section class="hero">
+            <div class=" container " id="mobile_container">
+                <div class="hero_block d-flex align-items-end justify-content-between">
+                    <div class="hero_left" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"
+                        data-aos-anchor-placement="bottom-bottom">
+                        <p class="hero_subtitle">Accounting & Tax Services</p>
+                        <h2 class="hero_title">It Is our <br>
+                            business <br>
+                            to help yours
+                        </h2>
+                        <p class="hero_desc">
+                            We take care of accounting while you take
+                            care of your business
+                        </p>
+                        <div class="hero_btn">
+                            <a href="#">Get
+                                consulting</a>
+                        </div>
+                    </div>
+                    <div class="hero_right">
+                        <div class="social_block d-flex align-items-center">
+                            <a href="#">LinkedIn</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- results section -->
+        <section class="results">
+            <div class="container">
+                <h2 class="main_title" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">Our Results &
+                    Numbers</h2>
+                <p class="main_desc" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">At AnRos we
+                    believe in the results and numbers, and this is what we have to tell
+                </p>
+                <div class="results_block d-flex flex-wrap align-items-center" data-aos="fade-up-right"
+                    data-aos-delay="500" data-aos-duration="1000">
+                    <!-- result_item -->
+                    <div class="result_item">
+                        <p class="result_count first">3</p>
+                        <p class="result_name">Locations nationwide</p>
+                    </div>
+                    <!-- result_item -->
+                    <div class="result_item">
+                        <p class="result_count"><span class="second">400</span>+</p>
+                        <p class="result_name">Clients</p>
+                    </div>
+                    <!-- result_item -->
+                    <div class="result_item">
+                        <p class="result_count"><span class="third">4.7</span>*</p>
+                        <p class="result_name">Trustpilot score</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- results services -->
+        <section class="services">
+            <div class="container">
+                <h2 class="main_title" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">Our SME
+                    Accounting Services</h2>
+                <p class="main_desc" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">We Provide
+                    Professional Business Solutions</p>
+                <div class="services_block d-none d-sm-flex align-items-center flex-wrap" data-aos="fade-down"
+                    data-aos-delay="500" data-aos-duration="1000">
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Limited Company <br>
+                                Accounting
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Financial <br>
+                                Planning
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Payroll <br>
+                                & Pensions
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Company <br>
+                                Formations
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_4.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Business <br>
+                                Coaching
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_5.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_more">
+                        <p>More Services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mobile_service_swiper d-sm-none align-items-center flex-wrap">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- service_item -->
+                        <div class="service_item">
+                            <div class="service_left">
+                                <p class="service_name">Limited Company <br>
+                                    Accounting
+                                </p>
+                                <div class="service_read">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="service_right">
+                                <div class="service_img">
+                                    <img src="./assets/images/service_icon_1.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- service_item -->
+                        <div class="service_item">
+                            <div class="service_left">
+                                <p class="service_name">Financial <br>
+                                    Planning
+                                </p>
+                                <div class="service_read">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="service_right">
+                                <div class="service_img">
+                                    <img src="./assets/images/service_icon_2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- service_item -->
+                        <div class="service_item">
+                            <div class="service_left">
+                                <p class="service_name">Payroll <br>
+                                    & Pensions
+                                </p>
+                                <div class="service_read">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="service_right">
+                                <div class="service_img">
+                                    <img src="./assets/images/service_icon_3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- service_item -->
+                        <div class="service_item">
+                            <div class="service_left">
+                                <p class="service_name">Company <br>
+                                    Formations
+                                </p>
+                                <div class="service_read">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="service_right">
+                                <div class="service_img">
+                                    <img src="./assets/images/service_icon_4.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- service_item -->
+                        <div class="service_item">
+                            <div class="service_left">
+                                <p class="service_name">Business <br>
+                                    Coaching
+                                </p>
+                                <div class="service_read">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="service_right">
+                                <div class="service_img">
+                                    <img src="./assets/images/service_icon_5.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- service_item -->
+            <div class="service_more">
+                <p>More Services</p>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section class="about">
+            <div class="container">
+                <div class="about_block align-items-center d-flex" data-aos="fade-down" data-aos-delay="300"
+                    data-aos-duration="1000">
+                    <div class="about_left">
+                        <div class="about_img">
+                            <img src="./assets/images/about_img.png" alt="">
+                        </div>
+                        <p class="about_name">Ekaterina</p>
+                        <p class="about_job">Director</p>
+                        <p class="about_left_desc">
+                            As a Director and the founder of AnRos Consultancy, Ekaterina brings in many years of
+                            experience working in accountancy and tax for small and large international companies.
+                            Passionate professional admired by small business owners Ekaterina is dedicated to helping
+                            your business succeed.
+                        </p>
+                    </div>
+                    <div class="about_right">
+                        <p class="about_welcome">Welcome ANROS</p>
+                        <h2 class="about_title">About us</h2>
+                        <p class="about_right_desc">
+                            Here at Anros, we like to think we’re the best finance accounting consultants for small
+                            businesses. Whether you’re a start-up or a fully established business, our services are
+                            designed to meet our client’s needs every step of the way by creating a supportive
+                            environment that helps them to accelerate. <br>
+                            Our client’s success is incredibly important to us, so we want to help them grow and improve
+                            in any way we can. We do this in a variety of ways, starting from outsourced bookkeeping and
+                            finance management to setting up more efficient systems in the business or even offering
+                            practical educational workshops or bespoke training and implementation of financial
+                            management to individual entrepreneurs and small business owners so that businesses operate
+                            smoothly without running out of cash, with maximised profitability and prepared for long
+                            term sustainable growth. <br>
+                            Our mission is to accelerate small businesses’ growth through analysis, knowledge, and
+                            attainment. Helping to develop financial management competency and achieve long-term
+                            advantages.
+                        </p>
+                        <div class="about_btn">
+                            <a href="#">More about us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stick_block d-flex">
+                <div class="stick1 stick_item"></div>
+                <div class="stick2 stick_item"></div>
+            </div>
+        </section>
+
+        <!-- clients section -->
+        <section class="clients">
+            <h2 class="main_title">anros <span class="green">Clients</span></h2>
+            <p class="main_desc">We treat all of our clients as a family and here are some of the members</p>
+            <div class="container">
+                <div class="clients_block position-relative">
+                    <div class="client_swiper swiper position-relative">
+                        <div class="swiper-wrapper client_wrapper align-items-center">
+                            <div class="swiper-slide">
+                                <div class="swiper_item">
+                                    <div class="swiper_img">
+                                        <img src="./assets/images/client_swiper_img1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper_item">
+                                    <div class="swiper_img">
+                                        <img src="./assets/images/client_swiper_img2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper_item">
+                                    <div class="swiper_img">
+                                        <img src="./assets/images/client_swiper_img3.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper_item">
+                                    <div class="swiper_img">
+                                        <img src="./assets/images/client_swiper_img4.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper_item">
+                                    <div class="swiper_img">
+                                        <img src="./assets/images/client_swiper_img5.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper_navigation">
+                        <div class="swiper_prev swiper_button">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="swiper_next swiper_button">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- review section -->
+        <section class="review" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+            <div class="container">
+                <div class="review_block d-flex">
+                    <div class="review_left">
+                        <p class="review_testimonial">Testimonial</p>
+                        <p class="review_client_title">What Our <br>
+                            Client Say’s
+                        </p>
+                        <p class="review_desc">
+                            Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative
+                        </p>
+                        <div class="review_navs ">
+                            <div class="review_nav_item review_prev">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <div class="review_nav_item review_next">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper_item">
+                                    <div class="swiper_top d-flex align-items-center">
+                                        <div class="swiper_img">
+                                            <img src="./assets/images/otziv1.png" alt="">
+                                        </div>
+                                        <div class="swiper_details">
+                                            <p class="swiper_name">Nattasha Kelvin</p>
+                                            <p class="swiper_job">Designer</p>
+                                            <div class="swiper_stars d-flex gap-1">
+                                                <img src="./assets/images/star_full.png" alt="">
+                                                <img src="./assets/images/star_full.png" alt="">
+                                                <img src="./assets/images/star_full.png" alt="">
+                                                <img src="./assets/images/star_full.png" alt="">
+                                                <img src="./assets/images/star_not_full.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="swiper_desc">
+                                        “ dd an excerpt from your personal biography, or simply let the world know who
+                                        you are and what you have to offer. Connect with your site visitor’s on a
+                                        personal level and make sure that your site.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper_item">
+                                    <div class="swiper_top d-flex align-items-center">
+                                        <div class="swiper_img">
+                                            <img src="./assets/images/otziv2.png" alt="">
+                                        </div>
+                                        <div class="swiper_details">
+                                            <p class="swiper_name">Cincinnati</p>
+                                            <p class="swiper_job">Designer</p>
+                                            <div class="swiper_stars d-flex gap-1">
+                                                <img src="./assets/images/star_full.png" alt="">
+                                                <img src="./assets/images/star_full.png" alt="">
+                                                <img src="./assets/images/star_full.png" alt="">
+                                                <img src="./assets/images/star_full.png" alt="">
+                                                <img src="./assets/images/star_full.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="swiper_desc">
+                                        “ Leverage agile frameworks to provide a robust synopsis for high level
+                                        overviews ”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- experience section  -->
+        <section class="experience" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+            <div class="container" id="mobile_container">
+                <div class="experience_block">
+                    <p class="exper_subtitle">Subscribe Whitecollar</p>
+                    <h3 class="exper_title">Need An Experienced
+                        AnRos job Service ? Contact Us</h3>
+                    <p class="exper_desc">
+                        Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative
+                        approaches to corporate strategy foster collaborative thinkingfurther the overal.
+                    </p>
+                    <div class="exper_button text-center">
+                        <a href="#" class="exper_btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="footer_block">
+                    <div class="footer_top d-flex align-items-center justify-content-between">
+                        <div class="footer_top_logo">
+                            <img src="./assets/images/footer_logo.svg" alt="">
+                        </div>
+                        <div class="footer_right d-flex align-items-center">
+                            <div class="footer_right_item">
+                                <a href="tel:02034882429" class="item_img">
+                                    <img src="./assets/images/footer_call.svg" alt="">
+                                </a>
+                                <div class="item_detail_block">
+                                    <p class="item_name">Call Us</p>
+                                    <a href="tel:02034882429" class="item_detail">020 3488 2429</a>
+                                </div>
+                            </div>
+
+                            <div class="footer_right_item">
+                                <a href="mailto:info@anros.co.uk" class="item_img">
+                                    <img src="./assets/images/footer_mail.svg" alt="">
+                                </a>
+                                <div class="item_detail_block">
+                                    <p class="item_name">Mail Us</p>
+                                    <a href="mailto:info@anros.co.uk" class="item_detail">info@anros.co.uk</a>
+                                </div>
+                            </div>
+
+                            <div class="footer_right_item">
+                                <div class="item_img">
+                                    <img src="./assets/images/footer_location.svg" alt="">
+                                </div>
+                                <div class="item_detail_block">
+                                    <p class="item_name">Location</p>
+                                    <a href="#" class="item_detail">85 Great Portland St <br> London,
+                                        W1W 7LT
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_middle d-flex justify-content-between">
+                        <div class="footer_middle_left d-flex justify-content-between flex-grow-1">
+                            <div class="footer_item">
+                                <p class="footer_name">Quick Link</p>
+                                <ul class="footer_list">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer_item">
+                                <p class="footer_name">Our Services</p>
+                                <ul class="footer_list">
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Accounting Services for SMEs</a></li>
+                                    <li><a href="#">Annual Accounts </a></li>
+                                    <li><a href="#">Preparation Services</a></li>
+                                    <li><a href="#">Bookkeeping Services</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_item align-self-center">
+                                <ul class="footer_list">
+                                    <li><a href="#">VAT Registration </a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Personal Taxation </a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Payroll Accountants </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form class="footer_form">
+                            <p class="form_subscribe">Subscribe</p>
+                            <p class="form_title">Join Our Mailing List & to get our news.</p>
+                            <div class="footer_subscribe_block">
+                                <input type="email" name="email" placeholder="your email address">
+                                <button>Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer_bottom d-flex align-items-center justify-content-between">
+                        <p class="copy_right">Copyright © AnRos - 2024</p>
+                        <div class="footer_social d-flex align-items-center">
+                            <a href="#">LinkedIn</a>
+                            <a href="#">Instagram </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
+    <!-- Juqery -->
+    <script src="./assets/libs/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- aos effect -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>

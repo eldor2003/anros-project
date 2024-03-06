@@ -1,0 +1,128 @@
+// blog hero
+#contact {
+	.hero .hero_subtitle {
+		margin-bottom: 30px;
+	}
+	padding: 170px 0;
+	margin-bottom: 50px;
+	background-image: linear-gradient(
+			to right,
+			rgba(9, 66, 53, 0.85) 50%,
+			transparent 20%
+		),
+		url(../images/contact_bg.png);
+	backdrop-filter: blur(19px);
+}
+
+// contact_form
+.contact_form {
+	margin-bottom: 50px;
+	.contact_subtitle {
+		color: rgb(105, 105, 105);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 2%;
+		margin-bottom: 10px;
+	}
+	.contact_title {
+		color: rgb(55, 57, 63);
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 33px;
+		margin-bottom: 30px;
+	}
+	.contact_block {
+		gap: 28px 35px;
+		input {
+			flex: 0 0 auto;
+			width: calc(50% - 20px);
+			height: 65px;
+			outline: none;
+			box-sizing: border-box;
+			border: 1px solid rgb(221, 221, 221);
+			background: rgb(248, 248, 248);
+			padding-left: 40px;
+			color: rgb(55, 57, 63);
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			&::placeholder {
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 25px;
+				color: rgb(55, 57, 63);
+			}
+		}
+		textarea {
+			width: 100%;
+			height: 222px;
+			box-sizing: border-box;
+			border: 1px solid rgb(221, 221, 221);
+			background: rgb(248, 248, 248);
+			padding: 22px 0 0 40px;
+			color: rgb(55, 57, 63);
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 25px;
+			margin-bottom: 22px;
+			outline: none;
+			&::placeholder {
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 25px;
+				color: rgb(55, 57, 63);
+			}
+			&::-webkit-resizer {
+				display: none;
+			}
+		}
+		button {
+			color: rgb(0, 0, 0);
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 33px;
+			letter-spacing: 2%;
+			text-transform: uppercase;
+			padding: 18px 90px;
+			border-radius: 100px;
+			background: rgb(255, 183, 116);
+			border: none;
+		}
+	}
+}
+
+// location
+.location {
+	margin-bottom: 70px;
+	.location_detail {
+		gap: 50px;
+	}
+	.location_item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	.location_icon {
+		display: flex;
+		justify-content: center;
+		border-radius: 50%;
+		align-items: center;
+		width: 68px;
+		height: 68px;
+		background: rgb(244, 244, 244);
+	}
+	.loc_name {
+		margin-bottom: 3px;
+		color: rgb(0, 0, 0);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 27px;
+	}
+	.loc_value {
+		color: rgb(0, 0, 0);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25px;
+	}
+}

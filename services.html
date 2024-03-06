@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Шрифты -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Anros services </title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header_block d-flex align-items-center justify-content-between">
+                    <div class="header_logo">
+                        <a href="#">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- hamburger_mobile -->
+                    <div class="hamburger_menu d-lg-none">
+                        <a href="#">
+                            <svg class="hamburger_icon" width="27.000000" height="18.000000" viewBox="0 0 27 18"
+                                fill="none" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                    Created with Pixso.
+                                </desc>
+                                <defs />
+                                <path id="Icon"
+                                    d="M27 1.5C27 0.67157 26.3286 0 25.5 0L1.5 0C0.671387 0 0 0.67157 0 1.5C0 2.32843 0.671387 3 1.5 3L25.5 3C26.3286 3 27 2.32843 27 1.5ZM27 9C27 8.17157 26.3286 7.5 25.5 7.5L10.5 7.5C9.67139 7.5 9 8.17157 9 9C9 9.82843 9.67139 10.5 10.5 10.5L25.5 10.5C26.3286 10.5 27 9.82843 27 9ZM25.5 15C26.3286 15 27 15.6716 27 16.5C27 17.3284 26.3286 18 25.5 18L19.5 18C18.6714 18 18 17.3284 18 16.5C18 15.6716 18.6714 15 19.5 15L25.5 15Z"
+                                    fill="#000000" fill-opacity="1.000000" fill-rule="evenodd" />
+                            </svg>
+
+                        </a>
+                    </div>
+                    <ul class="header_menus d-flex align-items-center">
+                        <!-- <span class="close d-lg-none">
+                            <i class="fs-3 fa-solid fa-xmark"></i>
+                        </span> -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <div class="dropdown_list  position-relative">
+                            <button class="dropbtn d-flex justify-content-between ">
+                                Services
+                                <div class="arrow d-flex align-items-center">
+                                    <img src="./assets/images/header_select_arrow.svg" alt="">
+                                </div>
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="service2.html">Service2</a>
+                                <a href="#">Service3</a>
+                                <a href="#">Service4</a>
+                            </div>
+                        </div>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="header_phone d-flex align-items-center">
+                        <div class="phone_icon">
+                            <img src="./assets/images/header_phone_arrow.svg" alt="">
+                        </div>
+                        <a class="phone_number d-flex flex-column" href="tel:02034882429">
+                            <span class="number_tel">020 3488 2429</span>
+                            <span class="call_us">Call us now!</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- hero_section -->
+        <section class="hero" id="services_hero">
+            <div class="container">
+                <div class="hero_block d-flex align-items-end justify-content-between">
+                    <div class="hero_left" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"
+                        data-aos-anchor-placement="bottom-bottom">
+                        <p class="hero_subtitle">Our Services</p>
+                        <h2 class="hero_title">We’re Offering</h2>
+                        <p class="hero_desc">
+                            Our experts offer a wide range of services tailored for
+                            your individual needs
+                        </p>
+                    </div>
+                    <div class="hero_right">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- results services -->
+        <section class="services" id="services_page">
+            <div class="container">
+                <h2 class="main_title d-sm-block d-none" data-aos="fade-down" data-aos-delay="300"
+                    data-aos-duration="1000">Our SME
+                    Accounting Services</h2>
+                <p class="main_desc d-sm-block d-none" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    We Provide
+                    Professional Business Solutions</p>
+                <div class="services_block d-flex align-items-center flex-wrap" data-aos="fade-down"
+                    data-aos-delay="500" data-aos-duration="1000">
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Limited Company <br>
+                                Accounting
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Financial <br>
+                                Planning
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Payroll <br>
+                                & Pensions
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Company <br>
+                                Formations
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_4.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Business <br>
+                                Coaching
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_5.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">SEIS/EIS</p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Research & <br>
+                                Development Claims
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Self <br>
+                                Assessment
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Bookkeeping</p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Annual Accounts <br>
+                                Preparation
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Corporate <br>
+                                Taxation
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item">
+                        <div class="service_left">
+                            <p class="service_name">Estate Tax <br>
+                                Planning
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item hide">
+                        <div class="service_left">
+                            <p class="service_name">Company <br>
+                                Formations
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_4.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- service_item -->
+                    <div class="service_item hide">
+                        <div class="service_left">
+                            <p class="service_name">Business <br>
+                                Coaching
+                            </p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_5.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- service_item -->
+                    <div class="service_item hide">
+                        <div class="service_left">
+                            <p class="service_name">SEIS/EIS</p>
+                            <div class="service_read">
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service_right">
+                            <div class="service_img">
+                                <img src="./assets/images/service_icon_3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="more_services text-center">
+                    <a href="#">More services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="footer_block">
+                    <div class="footer_top d-flex align-items-center justify-content-between">
+                        <div class="footer_top_logo">
+                            <img src="./assets/images/footer_logo.svg" alt="">
+                        </div>
+                        <div class="footer_right d-flex align-items-center">
+                            <div class="footer_right_item">
+                                <a href="tel:02034882429" class="item_img">
+                                    <img src="./assets/images/footer_call.svg" alt="">
+                                </a>
+                                <div class="item_detail_block">
+                                    <p class="item_name">Call Us</p>
+                                    <a href="tel:02034882429" class="item_detail">020 3488 2429</a>
+                                </div>
+                            </div>
+
+                            <div class="footer_right_item">
+                                <a href="mailto:info@anros.co.uk" class="item_img">
+                                    <img src="./assets/images/footer_mail.svg" alt="">
+                                </a>
+                                <div class="item_detail_block">
+                                    <p class="item_name">Mail Us</p>
+                                    <a href="mailto:info@anros.co.uk" class="item_detail">info@anros.co.uk</a>
+                                </div>
+                            </div>
+
+                            <div class="footer_right_item">
+                                <div class="item_img">
+                                    <img src="./assets/images/footer_location.svg" alt="">
+                                </div>
+                                <div class="item_detail_block">
+                                    <p class="item_name">Location</p>
+                                    <a href="#" class="item_detail">85 Great Portland St <br> London,
+                                        W1W 7LT
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_middle d-flex justify-content-between">
+                        <div class="footer_middle_left d-flex justify-content-between flex-grow-1">
+                            <div class="footer_item">
+                                <p class="footer_name">Quick Link</p>
+                                <ul class="footer_list">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer_item">
+                                <p class="footer_name">Our Services</p>
+                                <ul class="footer_list">
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Accounting Services for SMEs</a></li>
+                                    <li><a href="#">Annual Accounts </a></li>
+                                    <li><a href="#">Preparation Services</a></li>
+                                    <li><a href="#">Bookkeeping Services</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_item align-self-center">
+                                <ul class="footer_list">
+                                    <li><a href="#">VAT Registration </a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Personal Taxation </a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Payroll Accountants </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form class="footer_form">
+                            <p class="form_subscribe">Subscribe</p>
+                            <p class="form_title">Join Our Mailing List & to get our news.</p>
+                            <div class="footer_subscribe_block">
+                                <input type="email" name="email" placeholder="your email address">
+                                <button>Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer_bottom d-flex align-items-center justify-content-between">
+                        <p class="copy_right">Copyright © AnRos - 2024</p>
+                        <div class="footer_social d-flex align-items-center">
+                            <a href="#">LinkedIn</a>
+                            <a href="#">Instagram </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
+    <!-- Juqery -->
+    <script src="./assets/libs/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- aos effect -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
