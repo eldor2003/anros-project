@@ -69,7 +69,7 @@ $(document).ready(function () {
 		breakpoints: {
 			// when window width is >= 320px
 			320: {
-				slidesPerView: 1,
+				slidesPerView: 1.15,
 				spaceBetween: 20,
 			},
 			// when window width is >= 640px
@@ -126,6 +126,28 @@ $(document).ready(function () {
 				spaceBetween: 30,
 			},
 		},
+	});
+
+	// service active
+
+	// service2 tabs
+	// tab
+	$(".service2_right:first").show();
+	$(".service2_lists li:first").addClass("active");
+
+	$(".service2_lists li").click(function (event) {
+		event.preventDefault();
+		index = $(this).index();
+		$(".service2_lists li").removeClass("active");
+		$(this).addClass("active");
+		$(".service2_right").hide();
+		$(".service2_right").eq(index).show();
+	});
+
+	// blog next
+	$(".blog_btn").on("click", function (e) {
+		e.preventDefault();
+		$(".blog_pagination").slideDown();
 	});
 
 	// mobile_blog_swiper
@@ -263,20 +285,20 @@ $(".result_count .third").animate(
 	}
 );
 
-// document.addEventListener("contextmenu", (e) => e.preventDefault());
+document.addEventListener("contextmenu", (e) => e.preventDefault());
 
-// function ctrlShiftKey(e, keyCode) {
-// 	return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-// }
+function ctrlShiftKey(e, keyCode) {
+	return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
 
-// document.onkeydown = (e) => {
-// 	// Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-// 	if (
-// 		event.keyCode === 123 ||
-// 		ctrlShiftKey(e, "I") ||
-// 		ctrlShiftKey(e, "J") ||
-// 		ctrlShiftKey(e, "C") ||
-// 		(e.ctrlKey && e.keyCode === "U".charCodeAt(0))
-// 	)
-// 		return false;
-// };
+document.onkeydown = (e) => {
+	// Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+	if (
+		event.keyCode === 123 ||
+		ctrlShiftKey(e, "I") ||
+		ctrlShiftKey(e, "J") ||
+		ctrlShiftKey(e, "C") ||
+		(e.ctrlKey && e.keyCode === "U".charCodeAt(0))
+	)
+		return false;
+};

@@ -20,9 +20,19 @@
 	.blog_item {
 		flex: 0 0 auto;
 		width: calc(50% - 15px);
+		transition: all ease-in 0.2s;
+		&:hover {
+			.blog_more {
+				color: rgb(255, 183, 116);
+			}
+		}
+		&.blog_pagination {
+			display: none;
+		}
 	}
 	.blog_img {
 		margin-bottom: 20px;
+		cursor: pointer;
 		img {
 			width: 100%;
 		}
@@ -53,6 +63,10 @@
 		line-height: 25px;
 		letter-spacing: 0%;
 		text-transform: capitalize;
+		transition: all ease-in-out 0.2s;
+		&:hover {
+			color: rgb(255, 183, 116);
+		}
 	}
 	.blog_btn {
 		color: rgb(0, 0, 0);

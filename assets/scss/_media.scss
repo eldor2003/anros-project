@@ -263,10 +263,14 @@
 		margin-bottom: 30px;
 	}
 	.hero .hero_btn {
+		text-align: center;
 		padding-bottom: 0;
 	}
 	.hero .social_block {
 		justify-content: center;
+	}
+	.review_block {
+		padding-left: 20px;
 	}
 	.main_title {
 		margin-bottom: 10px;
@@ -415,6 +419,7 @@
 	}
 	.review .review_block {
 		gap: 0px;
+		justify-content: center;
 	}
 	.review .swiper_item {
 		padding: 20px;

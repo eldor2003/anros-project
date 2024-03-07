@@ -523,6 +523,10 @@ header .call_us {
   text-transform: uppercase;
   border-radius: 100px;
   background: rgb(255, 183, 116);
+  transition: all ease-in 0.2s;
+}
+.hero .hero_btn a:hover {
+  background-color: #fff;
 }
 
 .results {
@@ -626,7 +630,11 @@ header .call_us {
 }
 .services .service_more:hover {
   cursor: pointer;
+  color: #fff;
   background: rgb(9, 66, 53);
+}
+.services .service_more:hover p {
+  color: #fff;
 }
 .services .service_more p {
   text-align: center;
@@ -637,6 +645,7 @@ header .call_us {
   letter-spacing: 0%;
   text-align: center;
   text-transform: capitalize;
+  transition: all ease-in 0.2s;
 }
 
 .about {
@@ -724,6 +733,11 @@ header .call_us {
   padding: 18px 60px;
   border-radius: 100px;
   background: rgb(255, 183, 116);
+  transition: all ease-in 0.2s;
+}
+.about .about_btn a:hover {
+  color: #fff;
+  background-color: rgba(9, 66, 53, 0.8509803922);
 }
 .about .stick_block {
   gap: 30px;
@@ -815,7 +829,7 @@ header .call_us {
 }
 .review .review_nav_item i {
   color: #000;
-  padding: 30px;
+  padding: 30px 35px;
   border-radius: 50%;
   font-size: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -912,8 +926,8 @@ header .call_us {
 }
 .experience .experience_block .exper_btn {
   padding: 21px 42px;
-  color: rgb(255, 255, 255);
   font-size: 18px;
+  color: #000;
   font-weight: 600;
   line-height: 25px;
   letter-spacing: 0%;
@@ -921,6 +935,10 @@ header .call_us {
   text-transform: uppercase;
   border-radius: 100px;
   background: rgb(255, 183, 116);
+  transition: all ease-in 0.2s;
+}
+.experience .experience_block .exper_btn:hover {
+  color: #fff;
 }
 
 footer {
@@ -1299,6 +1317,7 @@ footer .footer_social a {
   width: 35%;
 }
 .service2 .service2_right {
+  display: none;
   padding-bottom: 50px;
   flex: 0 0 auto;
   width: 56%;
@@ -1396,9 +1415,17 @@ footer .footer_social a {
 .blog .blog_item {
   flex: 0 0 auto;
   width: calc(50% - 15px);
+  transition: all ease-in 0.2s;
+}
+.blog .blog_item:hover .blog_more {
+  color: rgb(255, 183, 116);
+}
+.blog .blog_item.blog_pagination {
+  display: none;
 }
 .blog .blog_img {
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .blog .blog_img img {
   width: 100%;
@@ -1428,6 +1455,10 @@ footer .footer_social a {
   line-height: 25px;
   letter-spacing: 0%;
   text-transform: capitalize;
+  transition: all ease-in-out 0.2s;
+}
+.blog .blog_more:hover {
+  color: rgb(255, 183, 116);
 }
 .blog .blog_btn {
   color: rgb(0, 0, 0);
@@ -1957,10 +1988,14 @@ footer .footer_social a {
     margin-bottom: 30px;
   }
   .hero .hero_btn {
+    text-align: center;
     padding-bottom: 0;
   }
   .hero .social_block {
     justify-content: center;
+  }
+  .review_block {
+    padding-left: 20px;
   }
   .main_title {
     margin-bottom: 10px;
@@ -2109,6 +2144,7 @@ footer .footer_social a {
   }
   .review .review_block {
     gap: 0px;
+    justify-content: center;
   }
   .review .swiper_item {
     padding: 20px;
